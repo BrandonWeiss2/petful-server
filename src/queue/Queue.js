@@ -26,17 +26,17 @@ class Queue {
   }
 
   dequeue() {
-            //if the queue is empty, there is nothing to return
-            if (this.first === null) {
-              return;
-          }
-          const node = this.first;
-          this.first = this.first.next;
-           //if this is the last item in the queue
-          if (node === this.last) {
-              this.last = null;
-          }
-          return node.value;
+    //if the queue is empty, there is nothing to return
+    if (this.first === null) {
+      return;
+    }
+    const node = this.first;
+    this.first = this.first.next;
+      //if this is the last item in the queue
+    if (node === this.last) {
+        this.last = null;
+    }
+    return node.value;
   }
 
   show() {
@@ -44,7 +44,14 @@ class Queue {
   }
 
   all() {
-    // Return all items in the queue.
+    let tempNode = this.first;
+    const queueList = [];
+    while(tempNode.next !== null) {
+      queueList.push(tempNode.value)
+      tempNode = tempNode.next
+    }
+    queueList.push(tempNode.value)
+    return queueList
   }
 }
 

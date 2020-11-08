@@ -8,19 +8,13 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
   // Return all pets currently up for adoption.
-
+  res.status(200).json(Pets.get())
 })
 
-router.get('/cats', (req, res) => {
-  res.json(Pets.get().nextCat)
-}) 
-
-router.get('/dogs', (req, res) => {
-  res.json(Pets.get().nextDog)
-}) 
-
 router.delete('/', json, (req, res) => {
-  // Remove a pet from adoption.
+  const { type } = req.body;
+  Pets.dequeue(type)
+  res.status(202).json(Pets.get())
 })
 
 module.exports = router

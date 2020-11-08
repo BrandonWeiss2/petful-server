@@ -2,7 +2,14 @@ module.exports = {
   people: [
     'Randy Lahey',
     'Trevor Cory',
-    'Jim Lahey'
+    'Jim Lahey',
+    'Adom Wes',
+    'Sarah Joggin',
+    'Barb Weathers',
+    'Arron Smith',
+    'Kate Biggims',
+    'Tyra Leash',
+    'Karen Walters'
   ],
 
   dogs: [
@@ -220,7 +227,7 @@ module.exports = {
     {
       age: 3,
       breed: 'Tabby',
-      description: 'boxer dog',
+      description: 'black cat',
       gender: 'Male',
       imageURL: 'https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       name: 'Vince the Pince',

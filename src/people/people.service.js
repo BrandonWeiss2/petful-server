@@ -8,17 +8,21 @@ const people = new Queue()
 store.people.forEach(person => people.enqueue(person))
 
 // --------------------
+function random(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
 module.exports = {
   get() {
-    // Return all people in the queue.
+    return people.all()
   },
 
   enqueue(person) {
-    // Add a person to the queue.
+    people.enqueue(person)
   },
-
   dequeue() {
-    // Remove a person from the queue.
+    let ran = random(store.people.length);
+    people.enqueue(store.people[ran])
+    people.dequeue()
   }
 }
