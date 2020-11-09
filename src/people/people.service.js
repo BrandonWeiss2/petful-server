@@ -22,7 +22,10 @@ module.exports = {
   },
   dequeue() {
     let ran = random(store.people.length);
-    people.enqueue(store.people[ran])
+    let queueLength = People.all().queueLength
+    if(queueLength <= 5) {
+      people.enqueue(store.people[ran])
+    }
     people.dequeue()
   }
 }
