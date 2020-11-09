@@ -7,6 +7,8 @@ const store = require('../../store')
 const people = new Queue()
 store.people.forEach(person => people.enqueue(person))
 
+let queueLength = people.all().length
+
 // --------------------
 function random(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -22,7 +24,7 @@ module.exports = {
   },
   dequeue() {
     let ran = random(store.people.length);
-    let queueLength = People.all().queueLength
+    let queueLength = people.all().length
     if(queueLength <= 5) {
       people.enqueue(store.people[ran])
     }
