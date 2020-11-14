@@ -1,27 +1,13 @@
-# Express Boilerplate!
+Welcome To Petful!
 
-This is a boilerplate project used for starting new projects!
+Live link: https://petful-client-theta.vercel.app/adoption
 
-## Set up
+Summary: 
+We make adopting the cat or dog (or both) of your dreams as easy as possible! Simply enter your name to join the adoption queue. Once you make it to the front of the line, you will be able to chose which pet you would like to adopt. Keep in mind our shelter is small so we only have one cat and dog available at a time. If you don't like either that are currenlty up for adoption, simply enter the queue one more time to try again!
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+Client Repo: https://github.com/BrandonWeiss2/taxhub-client
+Server Repo: https://github.com/BrandonWeiss2/taxhub-server
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`. Update contents in `.env` & `config.js`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+TECHNOLOGY: Back End - Node and Express - RESTful Api
 
-
-## Scripts
-
-Start the application `npm start`
-
-Start nodemon for the application `npm run dev`
-
-Run the tests `npm test`
-
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+Production - Deployed via Heroku
